@@ -1,0 +1,13 @@
+Mensageria é o nome dado a sistemas responsáveis pela troca de mensagens visando uma alta disponibilidade a partir do tratamento do ciclo de mensagens desde seu envio ao gerenciamento. Sistemas de mensageria possuem algumas características em comum, sendo uma delas um Message Broker, elemento central para a comunicação, o message broker é o intermediario que recebe os dados e disponibiliza ele.
+
+- filas: Elemento que possui as mensagens em transito. 
+- produtores: Elementos que produzem as mensagens e as enviam para a fila
+- consumidores: Elementos que recebem as mensagens a partir da fila
+- tópicos: È o que distingue o tipo da informação dentro de uma partiççao
+- partições: As partições coleções de tópicos, armazenam varias mensagens de um mesmo conteudo.
+
+RabbitMQ: Serviço que utiliza entregas com a ideia de push, onde as mensagens são priorizadas em relação a seu consumo. Os produtores enviam aos consumidores.
+
+Kafka: Utiliza engregas baseadas em pull, onde os consumidores consegum obter os dados publicados pelos consumidores.
+
+BullMQ: Mensageria baseada em node.js, possui suporte para LIFO (Last in, first out) e FIFO (First in, First out)
